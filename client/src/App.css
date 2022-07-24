@@ -1,0 +1,24 @@
+h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 6rem;
+    padding-left: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    font-weight:bold;
+    
+    
+    text-align: left;
+    
+  }
+    .Addalign {
+      align-items: center;
+    }
+    .main{
+      background-color: whitesmoke;
+    }
+  
+    

@@ -1,0 +1,148 @@
+.tasklist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 30px;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 138%;
+    
+}
+.tasklist ul {
+    list-style: none;
+    width: 70%;
+}
+.tasklist ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: .4s;
+    user-select: none;
+}
+
+.tasklist ul li .isComplete{
+    visibility: visible;
+    color: rgb(244,233,146);
+    margin-right: 10px;
+}
+.tasklist ul li p.taskcomplete{
+    text-decoration: line-through;
+}
+.tasklist ul li .edit{
+  margin-left: 10px;
+    color: "blue"
+}
+ .tasklist ul li .close{
+    margin-left: 10px;
+    color:"red"
+}
+.tasklist ul li .edit:hover{
+    background-color: rgb(7,94,233);
+    color: #fff;
+}
+.tasklist ul li .close:hover{
+    background-color: rgb(253,92,92);
+    color: #fff;
+}
+
+.tasklist ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .tasklist ul li:nth-child(4n + 1) {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+  }
+  
+  .tasklist ul li:nth-child(4n + 2) {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 0, 135, 1) 100%
+    );
+  }
+  
+  .tasklist ul li:nth-child(4n + 3) {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+  }
+ 
+
+.tasklist ul li:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+table {
+  counter-reset: rowNumber -1;
+}
+
+table tr {
+  counter-increment: rowNumber ;
+}
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
+.dtHorizontalVerticalExampleWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#dtHorizontalVerticalExample th,
+td {
+  white-space: nowrap;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+  bottom: .5em;
+}
+
+
+.app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.button {
+  box-shadow: none !important
+}
+
